@@ -66,6 +66,8 @@ export function Header() {
           ))}
         </nav>
 
+
+
         {/* Botão de Ação */}
         <div data-aos="fade-left" data-aos-delay="800">
           <a 
