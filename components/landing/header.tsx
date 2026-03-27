@@ -66,21 +66,7 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Barra de Busca com Ícone Customizado */}
-<div className="hidden lg:flex items-center relative mx-4">
-  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-    <img 
-      src="/images/logo_nav" 
-      alt="Busca" 
-      className="h-4 w-4 object-contain opacity-80" 
-    />
-  </div>
-  <input
-    type="text"
-    placeholder="Buscar..."
-    className="bg-gray-100/50 border border-transparent focus:bg-white focus:border-[#116644] pl-9 pr-4 py-1.5 rounded-full text-xs transition-all outline-none w-40 focus:w-52"
-  />
-</div>
+
 
         {/* Botão de Ação */}
         <div data-aos="fade-left" data-aos-delay="800">
