@@ -1,4 +1,4 @@
-"use client" // Essencial para componentes que usam useEffect e bibliotecas de animação
+"use client"
 
 import { useEffect } from 'react'
 // Importamos o CSS aqui em cima normalmente
@@ -47,6 +47,15 @@ export default function RootLayout({
 
   return (
     <html lang="pt-BR" className={`${geist.variable} ${playfair.variable} scroll-smooth`}>
+   <head>
+  <title>Econdomínio Club</title>
+  {/* O ?v=3 força o localhost e a Vercel a lerem o arquivo novo na hora */}
+  <link rel="icon" href="/favicon2.png?v=3" type="image/png" />
+  <link rel="apple-touch-icon" href="/logo_nav.png?v=3" />
+  
+  {/* Essa tag abaixo mata o ícone padrão do Next.js que apareceu no seu print */}
+  <meta name="next-head-count" content="0" /> 
+</head>
       <body className="font-sans antialiased bg-white text-[#004AAD] overflow-x-hidden">
         {children}
         <Analytics />
